@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Cheat Sheet Project</h1>
+	</header>
+
+	<nav>
+		<ul class="menu">
+			<li class="menu__item"><a href="index.html" class="menu__link">Tables</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Forms</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Topic2</a></li>
+			<li class="menu__item"><a href="#" class="menu__link">Topic3</a></li>
+		</ul>
+	</nav>
+
+	<!-- Form tags & attributes -->
+	<table class="form">
+		<thead>
+			<tr>
+				<th>Form Tags</th>
+				<th>Name</th>
+				<th>Purpose</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>&lt;form&gt;</td>
+				<td>Form</td>
+				<td>The form element collects information and sends it somewhere for
+					processing.</td>
+			</tr>
+			<tr>
+				<td>&lt;form <span>action="/example.html"</span>&gt;</td>
+				<td>action</td>
+				<td>The <span>action</span> attribute determines where the information is sent.</td>
+			</tr>
+			<tr>
+				<td>&lt;form <span>method="POST"</span>&gt;</td>
+				<td>method</td>
+				<td>The <span>method</span> attribute is assigned a HTTP verb that is included in the HTTP request.</td>
+			</tr>
+			<tr>
+				<td>&lt;input&gt;</td>
+				<td>Input</td>
+				<td>It creates an input field in our form.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="text"</span>&gt;</td>
+				<td>type</td>
+				<td>The <span>type</span> attribute determines how the input field is rendered on the webpage and what kind of
+					data it can
+					accept. Its default value is "text".</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>name="firstname"</span>&gt;</td>
+				<td>name</td>
+				<td>The <span>name</span> attribute acts as a label for the data we enter in the input field.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>value="bryan"</span>&gt;</td>
+				<td>value</td>
+				<td>The value attribute contains what the user types into the field, and then it is linked with the name
+					attribute to be sent as a key:value pair.</td>
+			</tr>
+			<tr>
+				<td>&lt;label&gt;</td>
+				<td>Label</td>
+				<td>The label element has opening and closing tags and it is used to properly identify an input field.</td>
+			</tr>
+			<tr>
+				<td>&lt;label <span>for="meal"</span>&gt;</td>
+				<td>for</td>
+				<td>To associate a label with an input field we use the <span>for</span> attribute and set it equal to the value
+					of the
+					input's <span>id</span> attribute.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>id="meal"</span>&gt;</td>
+				<td>id</td>
+				<td>To associate a label with an input field we use the <span>for</span> attribute and set it equal to the value
+					of the
+					input's <span>id</span> attribute.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="password"</span>&gt;</td>
+				<td>password</td>
+				<td>The <span>type="password"</span> creates a password field that obscures the information we type into
+					it, usually replacing text with asterisks.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="number"</span>&gt;</td>
+				<td>number</td>
+				<td>The <span>type="number"</span> creates an input field that only accepts number and a few special characters
+					like: +, - and .</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="number" step="1"</span>&gt;</td>
+				<td>step</td>
+				<td>The <span>step</span> attribute in a <span>type="number"</span> field allows us to add arrows to
+					increase/decrease
+					the number by the value of the <span>step</span> attribute.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="range" min="0" max="100"</span>&gt;</td>
+				<td>range</td>
+				<td>The <span>type="range"</span> creates a slider to which we can add a minimum and maximum value using the
+					<span>min</span> and <span>max</span> attributes.
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="range" step="5"</span>&gt;</td>
+				<td>range</td>
+				<td>In the <span>type="range"</span> we can also add the <span>step</span> attribute which will determine how
+					smooth and fluid the slider will move.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="checkbox" name="topping"</span>&gt;</td>
+				<td>checkbox</td>
+				<td>The <span>type="checkbox"</span> allows us to present several options to the user, in which case we need to
+					add the same value for the <span>name</span> attribute
+					to all the checkboxes. Each &lt;<span>input type="checkbox"</span>&gt; needs to have an associated label.</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="radio" name="answer"</span>&gt;</td>
+				<td>radio</td>
+				<td>We use radio buttons to present several options but only allow one possible answer. To group several radio
+					buttons we need to assign the same value to the attribute <span>name.</span></td>
+			</tr>
+			<tr>
+				<td>&lt;pending&gt;</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>&lt;pending&gt;</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>&lt;pending&gt;</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>
