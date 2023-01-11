@@ -69,7 +69,8 @@
 			<tr>
 				<td>&lt;input <span>value="bryan"</span>&gt;</td>
 				<td>value</td>
-				<td>The value attribute contains what the user types into the field, and then it is linked with the name
+				<td>The value attribute contains what the user types into the field, and then it is linked with the
+					<span>name</span>
 					attribute to be sent as a key:value pair.</td>
 			</tr>
 			<tr>
@@ -137,22 +138,104 @@
 					buttons we need to assign the same value to the attribute <span>name.</span></td>
 			</tr>
 			<tr>
-				<td>&lt;pending&gt;</td>
-				<td></td>
-				<td></td>
+				<td>&lt;select&gt;</td>
+				<td>Select</td>
+				<td>The select element creates a dropdown list that we can then populate by adding multiple option elements.
+				</td>
 			</tr>
 			<tr>
-				<td>&lt;pending&gt;</td>
-				<td></td>
-				<td></td>
+				<td>&lt;select <span>id="lunch" name="lunch"</span>&gt;</td>
+				<td>Select</td>
+				<td>In order to create the dropdown list, the &lt;select&gt; element needs to have an <span>id</span> attribute to link
+					it with a &lt;label&gt; element, and a <span>name</span> attribute to link it with multiple &lt;option&gt;
+					elements.</td>
 			</tr>
 			<tr>
-				<td>&lt;pending&gt;</td>
-				<td></td>
-				<td></td>
+				<td>&lt;option <span>value="pizza"</span>&gt; Pizza &lt;/option&gt;</td>
+				<td>Option</td>
+				<td>The &lt;option&gt; element is used to add options to the dropdown list, it needs to have a
+					<span>value</span> attribute that needs to be equal to the text between the opening and closing &lt;option&gt;
+					tags
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;textarea <span>id="blog" name="blog" rows="5" cols="30"</span>&gt;
+					&lt;/textarea&gt;</td>
+				<td>Textarea</td>
+				<td>The &lt;textarea&gt; element is used to create a text input field larger than the &lt;input
+					<span>type="text"</span>&gt; that we previously studied, and we can determine the size of the text field
+					by using the <span>rows</span> and <span>cols</span> attributes.
+				</td>
+			</tr>
+			<tr>
+				<td>&lt;input <span>type="submit" value="Send"</span>&gt;</td>
+				<td>submit</td>
+				<td>The <span>type="submit"</span> creates a submit button in our form. We can change the default "submit" word
+					that is shown in the button by adding a different word in the <span>value</span> attribute.</td>
 			</tr>
 		</tbody>
 	</table>
+
+	<!-- 	A form in action  -->
+	<form action="">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" step="5">
+
+		<label for="satisfaction">Satisfied?</label>
+		<input type="range" id="satisfaction" name="satisfaction" min="1" max="100" step="10">
+
+		<p>Games:</p>
+		<div class="games">
+			<label for="gow">God of War</label>
+			<input type="checkbox" id="gow" name="games">
+			<label for="daysgone">Days Gone</label>
+			<input type="checkbox" id="daysgone" name="games">
+			<label for="uncharted">Uncharted</label>
+			<input type="checkbox" id="uncharted" name="games">
+		</div>
+
+		<p>Gender:</p>
+		<div class="gender">
+			<label for="female">Female</label>
+			<input type="radio" id="female" name="gender">
+			<label for="male">Male</label>
+			<input type="radio" id="male" name="gender">
+			<label for="other">Other</label>
+			<input type="radio" id="other" name="gender">
+		</div>
+
+		<label for="programlang">Programming language:</label>
+		<select name="programlang" id="programlang">
+			<option value="none"></option>
+			<option value="java">Java</option>
+			<option value="javascript">JavaScript</option>
+			<option value="cplusplus">C++</option>
+			<option value="csharp">C#</option>
+			<option value="kotlin">Kotlin</option>
+		</select>
+
+		<label for="city">Your country:</label>
+		<input type="text" list="cities" id="city" name="city">
+		<datalist id="cities">
+			<option value="Australia"></option>
+			<option value="Austria"></option>
+			<option value="Argentina"></option>
+			<option value="Mexico"></option>
+			<option value="Costa Rica"></option>
+			<option value="Vietnam"></option>
+			<option value="Italy"></option>
+			<option value="Germany"></option>
+			<option value="Sweden"></option>
+		</datalist>
+
+		<input type="submit" value="Send information">
+	</form>
 </body>
 
 </html>

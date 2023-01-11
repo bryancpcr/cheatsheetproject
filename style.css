@@ -110,3 +110,32 @@ span {
 	background-color: rgba(250,239,240,0.78);
 	color: #b44437;
 }
+
+
+/* -----FORM----- */
+form {
+	margin: 4em auto;
+	width: 50%;
+	border: 1px solid;
+	padding: 2em;
+}
+
+input {
+	display: block;
+	margin-bottom: 1em;
+}
+
+[type="checkbox"], 
+[type="radio"]  {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+select {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.games, .gender {
+	margin-bottom: 1em;
+}
